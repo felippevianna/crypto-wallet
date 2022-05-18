@@ -1,6 +1,8 @@
 class CoinsController < ApplicationController
   # layout "adm" /// por aqui da pra escolher o layout que vai aparecer para dado controller
-  before_action :set_coin, only: %i[ show edit update destroy ]
+  before_action :set_coin, only: %i[ show edit update destroy ] 
+  # função que seta uma moeda para oso metodos dentor dos []
+  # método set_coin no fim do arquivo é m filtro para pegar a coin pelo :id nos query params
 
   # GET /coins or /coins.json
   def index
