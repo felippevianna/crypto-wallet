@@ -18,6 +18,9 @@ namespace :dev do
       puts "Você não está em ambiente de desenvolvimento"
     end
   end
+
+  private
+  
   def show_spinner(msg_start)
     spinner = TTY::Spinner.new("[:spinner] #{msg_start}")
     spinner.auto_spin
